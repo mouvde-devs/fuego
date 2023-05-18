@@ -13,12 +13,14 @@ public class KnapsackProblem {
     public static String OUTPUT = "";
 
     public static void main(String[] args) {
-//        if (args.length != 1) {
-//            System.out.println("please insert an input text file");
-//            return;
-//        }
+        
+        if (args.length != 1) {
+            System.out.println("please insert an input file");
+            return;
+        }
 
-        String filename = "C:\\Users\\hicha\\Desktop\\Projects\\test\\fuego\\src\\main\\java\\input.txt";
+        String filename = args[0];
+        // String filename = "C:\\Users\\hicha\\Desktop\\Projects\\test\\fuego\\src\\main\\java\\input.txt";
         List<Testcase> testcases = readTestcasesFromFile(filename);
 
         for (Testcase testcase : testcases) {
